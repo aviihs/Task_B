@@ -14,5 +14,6 @@ A simple Kanban board built with HTML, CSS, and JavaScript. This board allows us
 2. **Moving a Task**: Drag tasks from one column to another using either mouse or touch (on mobile).
 3. **Removing a Task**: Click the trash icon next to a task to remove it.
 
-You can watch the task by clicking ==> [HERE]().
-# Task_B
+You can watch the task by clicking ==> [HERE](https://aviihs.github.io/Task_B/INDEX.HTML).
+
+
