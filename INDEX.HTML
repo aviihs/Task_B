@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task B | Kanban board | Vrit Tech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Kanban board container -->
+  <div class="kanban-board">
+    
+    <!-- To Do Column -->
+    <div class="kanban-column" id="todo">
+      <h3>To Do</h3>
+      <div class="kanban-tasks" id="todo-tasks">
+        <!-- Task item in To Do -->
+        <div class="kanban-task" draggable="true">
+          Build Kanban Board <span class="remove-task-btn">&#128465;</span>
+        </div>
+      </div>
+      <input type="text" placeholder="Add task..." class="task-input" />
+      <button class="add-task-btn">Add Task</button>
+    </div>
+    
+    <!-- In Progress Column -->
+    <div class="kanban-column" id="in-progress">
+      <h3>In Progress</h3>
+      <div class="kanban-tasks" id="in-progress-tasks">
+        <!-- Task item in Progress -->
+        <div class="kanban-task" draggable="true">
+          Learn JavaScript <span class="remove-task-btn">&#128465;</span>
+        </div>
+      </div>
+      <input type="text" placeholder="Add task..." class="task-input" />
+      <button class="add-task-btn">Add Task</button>
+    </div>
+    
+    <!-- Done Column -->
+    <div class="kanban-column" id="done">
+      <h3>Done</h3>
+      <div class="kanban-tasks" id="done-tasks">
+        <!-- Task items in Done -->
+        <div class="kanban-task" draggable="true">
+          Learn HTML <span class="remove-task-btn">&#128465;</span>
+        </div>
+        <div class="kanban-task" draggable="true">
+          Learn CSS <span class="remove-task-btn">&#128465;</span>
+        </div>
+      </div>
+      <input type="text" placeholder="Add task..." class="task-input" />
+      <button class="add-task-btn">Add Task</button>
+    </div>
+  </div>
+
+  <!-- External JS file for functionality -->
+  <script src="script.js"></script>
+</body>
+</html>

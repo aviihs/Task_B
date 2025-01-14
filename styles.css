@@ -1,0 +1,124 @@
+/* Body and Background */
+body {
+  font-family: Arial, sans-serif; /* Font style */
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at top left, #74c0fc, #5a8dee, #4c6ef5), url('https://www.transparenttextures.com/patterns/light-paper-fibers.png');
+  background-size: cover, auto; /* Gradient and texture */
+  background-attachment: fixed; /* Fixed background */
+  display: flex; /* Flexbox for center alignment */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: black; /* Default text color */
+}
+
+/* Kanban Board Layout */
+.kanban-board {
+  display: flex; /* Flexbox layout for columns */
+  gap: 20px; /* Space between columns */
+  width: 90%;
+  max-width: 1200px;
+  flex-wrap: nowrap; /* No wrapping of columns */
+  overflow-x: auto; /* Horizontal scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling */
+  padding-bottom: 10px;
+}
+
+/* Kanban Column Styling */
+.kanban-column {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  flex: 1; /* Equal column width */
+  min-width: 300px; /* Minimum width for columns */
+  max-width: 30%; /* Maximum width for columns */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  padding: 15px;
+  color: #333; /* Text color inside columns */
+}
+
+/* Column Header Styling */
+.kanban-column h3 {
+  margin: 0 0 10px;
+  text-align: center; /* Center text */
+  font-size: 1.4rem;
+  color: #4c6ef5; /* Column title color */
+}
+
+/* Task Container Styling */
+.kanban-tasks {
+  min-height: 200px;
+  padding: 10px;
+  border: 1px dashed #cccccc; /* Dashed border for tasks */
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+}
+
+/* Task Item Styling */
+.kanban-task {
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  color: #000;
+  font-size: 1rem;
+  font-family: 'Georgia', serif; /* Serif font for task text */
+  cursor: grab; /* Cursor on hover */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+/* Hover Effect for Task */
+.kanban-task:hover {
+  transform: translateY(-2px); /* Lift task on hover */
+  transition: transform 0.2s ease;
+}
+
+/* Remove Button Styling */
+.kanban-task .remove-task-btn {
+  color: #ff4d4d; /* Red color for remove button */
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s; /* Smooth transition for hover */
+}
+
+/* Hover Effect for Remove Button */
+.kanban-task .remove-task-btn:hover {
+  transform: scale(1.2); /* Increase size on hover */
+}
+
+/* Input Field Styling */
+.task-input {
+  color: #333;
+  background-color: #fff; /* White background for input */
+  border: 1px solid #ccc;
+  padding: 12px; /* Increased padding */
+  font-size: 1.1rem;
+  width: 91%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* Add Task Button Styling */
+.add-task-btn {
+  background-color: #4caf50; /* Green button */
+  color: white;
+  padding: 15px; /* Large button padding */
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+.add-task-btn:hover {
+  background-color: #316534; /* Darken button on hover */
+}
